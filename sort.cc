@@ -171,8 +171,8 @@ void quick_sort2(int arr[], int lower, int upper)
         swap(arr, i, j);
     }
     swap(arr, lower, j);
-    quick_sort(arr, lower, j - 1);
-    quick_sort(arr, j + 1, upper);
+    quick_sort2(arr, lower, j - 1);
+    quick_sort2(arr, j + 1, upper);
 }
 
 
